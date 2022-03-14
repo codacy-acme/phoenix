@@ -22,17 +22,13 @@
         # In the latter case `**/*.{ex,exs}` will be used.
         #
         included: [
-          "mix.exs",
-          "lib/",
-          "src/",
-          "test/",
-          "web/",
-          "apps/*/lib/",
-          "apps/*/src/",
-          "apps/*/test/",
-          "apps/*/web/"
+          "installer/**/*.{ex,exs}"
         ],
-        excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/"]
+        excluded: [
+          ~r"/_build/",
+          ~r"/deps/",
+          ~r"/node_modules/",
+          "installer/templates/"]
       },
       #
       # Load and configure plugins here:
@@ -151,7 +147,7 @@
         {Credo.Check.Warning.UnusedStringOperation, []},
         {Credo.Check.Warning.UnusedTupleOperation, []},
         {Credo.Check.Warning.UnsafeExec, []},
-        {Credo.Check.Warning.MissingHeaderNotice, []},
+        # {Credo.Check.Warning.MissingHeaderNotice, []},
 
         #
         # Checks scheduled for next check update (opt-in for now, just replace `false` with `[]`)
