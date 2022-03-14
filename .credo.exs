@@ -28,7 +28,7 @@
           ~r"/_build/",
           ~r"/deps/",
           ~r"/node_modules/",
-          "installer/templates/"]
+          ~r"/installer/templates/"]
       },
       #
       # Load and configure plugins here:
