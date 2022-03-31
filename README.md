@@ -3,6 +3,9 @@
 
 [![Build Status](https://github.com/phoenixframework/phoenix/workflows/CI/badge.svg)](https://github.com/phoenixframework/phoenix/actions?query=workflow%3ACI)
 
+# line 1
+### line 3
+
 ## Getting started
 
 See the official site at https://www.phoenixframework.org/
